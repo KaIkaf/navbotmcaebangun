@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:src="@drawable/rectngl"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rumus = Panjang x Lebar"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="number"
+        android:id="@+id/textboxpanjang"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background"
+        android:hint="Masukan Panjang"
+        android:padding="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+
+
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:inputType="number"
+        android:id="@+id/textboxlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:hint="Masukan Lebar"
+        android:padding="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp">
+
+
+    <Button
+        android:id="@+id/btnhitungrectangle"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hitung"
+        android:backgroundTint="@color/red"
+        />
+
+    <Button
+        android:id="@+id/btnresetrectangle"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Reset"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil:"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/hasilrectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        />
+
+</LinearLayout>
